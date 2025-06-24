@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<title>Stowarzyszenie Wspólnie dla Mechowca</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    nav a {
+      cursor: pointer;
+    }
+
+    section {
+      margin: 20px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+
+    /* Styl galerii */
+    #gallery {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img alt="Logo Stowarzyszenia" src="logo.png"/>
+</div>
+<h1>Stowarzyszenie Wspólnie dla Mechowca</h1>
+</header>
+<nav>
+<div class="nav-left">
+<ul>
+<li><a class="tab-link active" data-tab="home">Strona Główna</a></li>
+<li><a class="tab-link" data-tab="news">Aktualności</a></li>
+<li class="dropdown">
+<a class="tab-link" data-tab="about">O nas</a>
+<div class="dropdown-content">
+<p><a class="tab-link" data-tab="zarzad">Zarząd</a></p>
+<p><a class="tab-link" data-tab="komisja">Komisja rewizyjna</a></p>
+<p><a class="tab-link" data-tab="misja">Misja</a></p>
+</div>
+</li>
+<li><a class="tab-link" data-tab="contact">Kontakt</a></li>
+<li class="dropdown">
+<a class="tab-link" data-tab="docs">Dokumenty</a>
+<div class="dropdown-content">
+<p><a class="tab-link" data-tab="statut">Statut</a></p>
+<p><a class="tab-link" data-tab="ochrona" download="" href="ochrona.pdf" target="_blank">Ochrona Małoletnich</a></p>
+<p><a class="tab-link" data-tab="rodo">RODO</a></p>
+</div>
+</li>
+<li><a class="tab-link" data-tab="gallery">Galeria</a></li>
+<li><a class="tab-link" data-tab="dpp">1.5% DPP</a></li>
+<li><a class="tab-link" data-tab="links">Linki</a></li>
+</ul>
+</div>
+<div class="nav-right">
+<ul>
+<li class="dropdown">
+<a href="#">Partnerzy</a>
+<div class="dropdown-content">
+<p><strong>Puste1</strong></p>
+<p><strong>Puste2</strong></p>
+<p><strong>Puste3</strong></p>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<main>
+<section class="tab-content active" id="home">
+<h2>Witamy na stronie głównej!</h2>
+<p>Tu będzie wprowadzenie, zdjęcie, logo i inne duperele startowe.</p>
+</section>
+<section class="tab-content" id="news">
+<h2>4 maja – Dzień Strażaka</h2>
+<article>
+<h3>📅 4 maja – Dzień Strażaka</h3>
+<p>
+          Dziś szczególnie pamiętamy o tych, którzy na co dzień ratują życie, dobytek i niosą pomoc tam, gdzie inni się wycofują.
+        </p>
+<p>
+          Strażacy – dziękujemy Wam za odwagę, zaangażowanie i gotowość do działania o każdej porze dnia i nocy.
+        </p>
+<p>
+          Życzymy Wam dużo zdrowia, siły, jak najmniej trudnych wyjazdów i tyle samo powrotów, co akcji.
+        </p>
+<img alt="Strażacy podczas akcji ratunkowej" src="strażak.jpg" style="max-width:100%; border-radius:8px; margin-top:20px;"/>
+</article>
+</section>
+<section class="tab-content" id="about">
+<h2>O nas</h2>
+
+</section>
+<section class="tab-content" id="zarzad">
+<h2>Zarząd</h2>
+<p>Opis zarządu stowarzyszenia.</p>
+</section>
+<section class="tab-content" id="komisja">
+<h2>Komisja rewizyjna</h2>
+<p>Opis komisji rewizyjnej.</p>
+</section>
+<section class="tab-content" id="misja">
+<h2>Misja</h2>
+<p>Opis misji stowarzyszenia.</p>
+</section>
+<section class="tab-content" id="contact">
+<h2>Kontakt</h2>
+<p><strong>Adres:</strong> Mechowiec 87</p>
+<p><strong>Kod pocztowy:</strong> 36-122 Dzikowiec</p>
+<p><strong>KRS:</strong> 0000819398</p>
+<p><strong>REGON:</strong> 529026760</p>
+<p><strong>NIP:</strong> 8141700525</p>
+<p><strong>Email:</strong> <a href="mailto:wspolniedlamechowca@o2.pl">wspolniedlamechowca@o2.pl</a></p>
+<p><strong>Konto:</strong> 15 1020 4405 0000 2202 0682 4918</p>
+<p><strong>Bank:</strong> PKO BP</p>
+<p><strong>Telefon:</strong> <a href="tel:+48885067876">885 067 876</a></p>
+</section>
+<section class="tab-content" id="gallery">
+<h2>Galeria</h2>
+<div class="gallery-container">
+<div class="gallery-item">
+<img alt="Opis zdjęcia 1" src="1.jpg"/>
+</div>
+<div class="gallery-item">
+<img alt="Opis zdjęcia 2" src="2.jpg"/>
+</div>
+<div class="gallery-item">
+<img alt="Opis zdjęcia 3" src="3.jpg"/>
+</div>
+</div>
+</section>
+<section class="tab-content" id="docs">
+<h2>Dokumenty</h2>
+<div class="dropdown-content">
+<p>Dokumenty do pobrania:</p>
+<ul>
+<li><a download="" href="statut.pdf">Statut (PDF)</a></li>
+<li><a download="" href="ochrona.pdf">Ochrona Małoletnich (PDF)</a></li>
+<li><a download="" href="rodo.pdf">RODO (PDF)</a></li>
+</ul>
+</div>
+</section>
+</main>
+<section class="tab-content" id="statut">
+<h2>Statut Stowarzyszenia</h2>
+<div style="max-height: 500px; overflow-y: auto; background: #fff; padding: 15px; border: 1px solid #ccc;">
+<!-- Wklej treść statutu tutaj -->
+<p><strong>Rozdział I – Postanowienia ogólne</strong></p>
+<p>					 §1  </p>
+<p>1. Stowarzyszenie, Wspólnie dla Mechowca" zwane dalej Stowarzyszeniem, działa na mocy ustawy z dnia 7 kwietnia 1989 r. Prawo o stowarzyszeniach (tj. Dz. U. z 2020 r. poz. 2261) oraz niniejszego 
+statutu. 
+</p>
+<p>2. Stowarzyszenie, po jego zarejestrowaniu, nabywa osobowość prawną.</p>
+<p>3. Nazwa Stowarzyszenia podlega ochronie prawnej. </p>
+<p>§2</p>
+<p>Siedzibą Stowarzyszenia jest wieś Mechowiec. </p>
+<p>§3</p>
+<p>1.Terenem działania Stowarzyszenia jest obszar Rzeczpospolitej Polskiej ze szczególnym 
+uwzględnieniem powiatu kolbuszowskiego i województwa podkarpackiego. 
+</p>
+<p>2. Dla realizacji celów statutowych stowarzyszenie może prowadzić działania poza granicami kraju na 
+terenie innych państw, z poszanowaniem tamtejszego prawa. </p>
+<p>§4</p>
+<p>Stowarzyszenie powołane jest na czas nieokreślony. </p>
+<p>§5</p>
+<p>1. Stowarzyszenie współpracuje z krajowymi, zagranicznymi i międzynarodowymi organizacjami pozarządowymi i innymi instytucjami. Może pozostawać członkiem tych organizacji na zasadach pełnej autonomii. 
+</p>
+<p>2. Stowarzyszenie ma prawo używania pieczęci i odznak zgodnie z obowiązującymi przepisami.</p>
+<p>§6</p>
+<p>Stowarzyszenie opiera swoją działalność na pracy społecznej członków. Do prowadzenia swoich działań może zatrudniać pracowników oraz powoływać biura. </p>
+<p><strong>Rozdział II. Cele i sposoby ich realizacji</strong></p>
+<p>§7</p>
+<p>Celem działania Stowarzyszenia jest:</p>
+<p>. Wspieranie działań z obszaru pomocy społecznej, przeciwdziałania uzależnieniom 
+i patologiom społecznym oraz wykluczenia społecznego, w tym: </p>
+<p>1) prowadzenie wielokierunkowych działań profilaktycznych oraz naprawczych zapobiegających patologiom społecznym, przeciwdziałających uzależnieniom i wszelkiemu wykluczeniu różnych grup społecznych, 
+</p>
+<p>2) podnoszenie poziomu świadomości społecznej w obszarze przyczyn powstawania i rozwoju 
+zachowań patologicznych oraz wykluczeń społecznych, </p>
+<p>3) rozwój sformalizowanych form opieki i wsparcia oraz środowiskowych form pomocy 
+i samopomocy względem osób i rodzin z obszaru włączenia społecznego, </p>
+<p>4) pomoc społeczna, w tym pomoc osobom i ich rodzinom w trudnej sytuacji życiowej oraz 
+wyrównywanie szans tych osób, </p>
+<p>5) działalność na rzecz macierzyństwa, rodzicielstwa oraz upowszechniania i ochrony praw dziecka 
+oraz wsparcia systemu pieczy zastępczej, 
+</p>
+<p>6) poprawa sytuacji społecznej, ekonomicznej, edukacyjnej oraz zdrowia psychicznego osób 
+i rodzin zagrożonych wykluczeniem społecznym, 
+</p>
+<p>7) rzecznictwo interesów i wzmacnianie grup w szczególnie trudnej sytuacji życiowej w tym w szczególności rodzin i osób bezrobotnych, nieaktywnych zawodowo, niepełnosprawnych, seniorów, osób uzależnionych, ubogich i bezdomnych, 
+</p>
+<p>8) działalność na rzecz reintegracji społecznej i zawodowej osób zagrożonych wykluczeniem 
+społecznym, w tym osób dotkniętych bezrobociem, niepełnosprawnością, 
+</p>
+<p>9) reintegracja społeczna polegająca m.in. na odbudowie i podtrzymywaniu umiejętności uczestniczenia w życiu społeczności lokalnej, pełnieniu ról społecznych w miejscu pracy oraz integracja zawodowa wyrażająca się w odbudowie i podtrzymywaniu zdolności do samodzielnego świadczenia pracy na rynku pracy, 
+</p>
+<p>10) pomoc ofiarom katastrof, klęsk żywiołowych, konfliktów zbrojnych i wojen w kraju i za granicą, 11) działalność charytatywna, 
+</p>
+<p>
+12) holistyczna rewitalizacja społeczna i środowiskowa z uwzględnieniem działań inwestycyjnych. 
+</p>
+<p>2. Wspieranie rozwoju społeczeństwa obywatelskiego i aktywności społecznej, w tym:</p>
+<p>1) działalność wspomagająca rozwój wspólnot i społeczności lokalnych oraz oddolne inicjatywy,</p>
+<p>2) podejmowanie inicjatyw w zakresie wdrażania i promowania istotnych rozwiązań prawnych 
+i społecznych oraz partycypacja w tworzeniu dorobku prawnego Unii Europejskiej, </p>
+<p>3) podejmowanie otwartego dialogu społecznego i integracja środowisk lokalnych, 
+</p>
+<p>4) podejmowanie inicjatyw, wspieranie i promowanie działań opartych na współpracy organizacji 
+pozarządowych i jednostek samorządu terytorialnego, 
+</p>
+<p>5) upowszechnianie i ochrona wolności, praw człowieka oraz swobód obywatelskich, a także 
+działań wspomagających rozwój demokracji, 
+</p>
+<p>
+6) działalność na rzecz integracji europejskiej oraz rozwijania kontaktów i współpracy między 
+społeczeństwami, 
+</p>
+<p>7) pogłębianie wiedzy i świadomości w zakresie między innymi: równego statusu płci, ich roli i miejsca we współczesnym świecie oraz upowszechnianie i ochronę praw kobiet oraz działalność na rzecz równych praw kobiet i mężczyzn, 
+</p>
+<p>8) pomoc Polonii i Polakom za granicą, </p>
+<p>9) promocja Rzeczypospolitej Polskiej za granicą, 
+</p>
+<p>
+10) działalność w obszarze bezpieczeństwa publicznego, 
+</p>
+<p>
+11) zwiększanie poziomu wiedzy i świadomości prawnej obywateli, budowanie poradnictwa 
+obywatelskiego, 
+</p>
+<p>12) działalności na rzecz organizacji pozarządowych oraz podmiotów wymienionych w ustawie 
+o pożytku publicznym i wolontariacie, 
+</p>
+<p>13) upowszechnianie i ochrona praw konsumentów, 
+</p>
+<p>
+14) promocja i organizacja wolontariatu, </p>
+<p>15) propagowanie tolerancji poprzez szerzenie idei równości, 
+</p>
+<p>
+16) działalność na rzecz integracji cudzoziemców. 
+</p>
+<p>3. Wspieranie kultury i sztuki; upowszechnianie kultury fizycznej i sportu oraz ochrona 
+zdrowia publicznego, w tym: 
+</p>
+<p>1) podtrzymywanie i upowszechnianie tradycji narodowej, pielęgnowanie polskości oraz rozwoju 
+świadomości narodowej, obywatelskiej i kulturowej, 
+
+</p>
+<p>2) działania na rzecz rozwoju i promocji kultury, sztuki, ochrony dóbr kultury i dziedzictwa 
+narodowego, 
+</p>
+<p>4) budowanie lokalnej tożsamości kulturowej, w tym działalność na rzecz mniejszości narodowych i etnicznych oraz języka regionalnego,</p>
+<p>5) podejmowanie działań pozwalających na uprawianie sportu różnym grupom społecznym, pomoc w rozwijaniu i promowanie osiągnięć sportowych,</p>
+<p>6) prowadzenie różnych form wypoczynku i rekreacji,</p>
+<p>7) rozwój turystyki i krajoznawstwa oraz ekologii i ochrony zwierząt, ochrona dziedzictwa przyrodniczego,</p>
+<p>8) upowszechnianie wiedzy, ochrona i promocja zdrowia w tym fizycznego, psychicznego i społecznego, działalność lecznicza w rozumieniu ustawy z dnia 15 kwietnia 2011 r. o działalności leczniczej (Dz. U. z 2023 r. poz. 991, z późn. zm.); zapewniająca optymalne i satysfakcjonujące funkcjonowanie społeczne.</p>
+<p>4. Wspieranie rozwoju nauki, szkolnictwa wyższego, edukacji, oświaty i wychowania, w tym:</p>
+<p>1) zapewnianie równego dostępu do edukacji różnym grupom społecznym,</p>
+<p>2) współpraca z jednostkami sektora publicznego, prywatnego i społecznego w kraju i za granicą umożliwiająca szerszy dostęp oraz wymianę doświadczeń i dobrych praktyk w zakresie edukacji formalnej i nieformalnej,</p>
+<p>3) edukacja społeczeństwa w różnych dziedzinach gwarantujących rozwój umiejętności i kompetencji w formach szkolnych i pozaszkolnych,</p>
+<p>4) działalność na rzecz dzieci i młodzieży, w tym wypoczynku dzieci i młodzieży,</p>
+<p>5) animacja i propagowanie działań wspomagających rozwój człowieka, będących odpowiedzią na społeczną potrzebę edukacji w oparciu o indywidualne zainteresowania jednostki,</p>
+<p>6) wspieranie rozwoju kluczowych kompetencji społecznych szczególnie w zakresie kompetencji interpersonalnych;</p>
+<p>7) podejmowanie działań na rzecz zwiększenia dostępu do nowych technologii i podnoszenia kompetencji cyfrowych różnych grup społecznych, zwłaszcza defaworyzowanych ze względu na status materialny oraz miejsce zamieszkania,</p>
+<p>8) propagowanie wartości wychowania dzieci i młodzieży oraz współpracy rodziny i instytucji odpowiedzialnych za kształtowanie właściwych wzorców moralnych, systemu wartości i ambicji młodego pokolenia;</p>
+<p>5. Wspieranie rozwoju gospodarczego i przedsiębiorczości, inicjatyw gospodarczych, podnoszenie wiedzy społeczno-ekonomicznej społeczeństwa, a także przeciwdziałanie bezrobociu w tym:</p>
+<p>1) działalność wspomagająca rozwój techniki, wynalazczości i innowacyjności, rozpowszechnianie i wdrażanie nowych rozwiązań technicznych w praktyce gospodarczej,</p>
+<p>2) upowszechnianie praw pracowniczych oraz promocję zatrudnienia i aktywizacji zawodowej osób pozostających bez pracy i zagrożonych zwolnieniem z pracy,</p>
+<p>3) podejmowanie działań w obszarze gospodarki społecznej i solidarnej.</p>
+<p>§ 8</p>
+<p>Stowarzyszenie realizuje swoje cele poprzez działalność nieodpłatną i odpłatną pożytku publicznego w następującym zakresie:</p>
+<p>1. Współpraca i współdziałanie z władzami samorządowymi województwa, powiatu, gminy i organizacjami społecznymi, których działalność służy realizacji celów statutowych Stowarzyszenia.</p>
+<p>2. Pozyskiwanie środków finansowych ze źródeł zewnętrznych, niezbędnych do realizacji celów statutowych Stowarzyszenia.</p>
+<p>3. Organizowanie spotkań, szkoleń, kursów, konferencji, warsztatów, prelekcji i seminariów oraz konkursów, imprez, akcji plenerowych, akcji charytatywnych, festynów, pikników, aukcji, koncertów i wystaw itp. dla różnych osób i grup wiekowych oraz dla instytucji i podmiotów, służących realizacji celów statutowych.</p>
+<p>4. Udzielanie pomocy intelektualnej, rzeczowej oraz finansowej w zakresie poprawy jakości życia społecznego.</p>
+<p>5. Tworzenie i realizacja programów edukacyjnych, profilaktycznych i innych zwłaszcza z obszaru włączenia społecznego.</p>
+<p>6. Podejmowanie działań dedykowanych osobom powracającym na rynek pracy (osoby bezrobotne, nieaktywne zawodowo, przebywające na urlopach macierzyńskich i wychowawczych).</p>
+<p>7. Doskonalenie umiejętności aktywnego poszukiwania pracy.</p>
+<p>8. Pomoc w podnoszeniu i zmianie kwalifikacji zawodowych.</p>
+<p>9. Prowadzenie doradztwa personalnego oraz pośrednictwa pracy.</p>
+<p>10. Promocja różnych form zatrudnienia i aktywizacji zawodowej osób pozostających bez pracy i zagrożonych zwolnieniem z pracy, w tym prowadzenie przedsiębiorstwa socjalnego.</p>
+<p>11. Tworzenie i realizacja programów aktywnej walki z bezrobociem i reintegracji.</p>
+<p>12. Wspieranie, zarządzanie i tworzenie podmiotów ekonomii społecznej i aktywizacji zawodowej.</p>
+<p>13. Organizowanie pomocy charytatywnej i humanitarnej.</p>
+<p>14. Wykonywanie zadań zleconych w zakresie działalności prowadzonej przez Stowarzyszenie w ramach otrzymanych na ten cel środków.</p>
+<p>15. Prowadzenie psychoterapii, socjoterapii, obozów, punktów konsultacyjnych oraz innego grupowego i indywidualnego wsparcia specjalistycznego.</p>
+<p>16. Prowadzenie prac naukowo-badawczych służących podniesieniu skuteczności oddziaływań profilaktycznych, edukacyjnych i szkoleniowych oraz budowaniu sieci wsparcia osób pochodzących z obszaru włączenia społecznego.</p>
+<p>17. Prowadzenie działalności promocyjnej, informacyjnej i wydawniczej.</p>
+<p>18. Prowadzenie poradnictwa społecznego, zawodowego i prawnego.</p>
+<p>19. Organizowanie imprez sportowych, rekreacyjnych, turystycznych.</p>
+<p>20. Realizowanie projektów i programów służących przeciwdziałaniu biernym formom spędzania wolnego czasu, propagowaniu zdrowego stylu życia i aktywności fizycznej.</p>
+<p>21. Organizowanie i udział w krajowych i międzynarodowych projektach, służących realizacji celów statutowych;</p>
+<p>22. Rozwijanie kontaktów naukowych, kulturalnych i społecznych pomiędzy przedstawicielami różnych krajów, społeczności.</p>
+<p>23. Wspieranie rozwoju kontaktów międzykulturowych w celu poszanowania odmienności i tolerancji.</p>
+<p>24. Tworzenie grup samopomocowych, spółdzielni socjalnych, centrów integracji społecznej, zakładów aktywności zawodowej i innych instytucji propagujących idee polityki społecznej.</p>
+<p>25. Tworzenie systemu wsparcia w tym placówek o różnym profilu oraz placówek profilaktycznych dla osób uzależnionych, w tym od uzależnień behawioralnych, osób bezdomnych, seniorów i innych osób pozostających w sytuacji kryzysowej.</p>
+<p>26. Organizowanie kampanii i akcji informacyjnych.</p>
+<p>27. Współpraca z instytucjami samorządowymi, związkowymi, organizacjami pozarządowymi i podmiotami gospodarczymi, w kraju i za granicą w celu realizacji zadań statutowych.</p>
+<p>28. Organizowanie partnerstwa lokalnego i regionalnego oraz innych projektów finansowanych z Unii Europejskiej i pozyskiwanie środków finansowych na realizację celów Stowarzyszenia.</p>
+<p>29. Monitorowanie działalności prowadzonej przez sektor publiczny.</p>
+<p>30. Reprezentowanie interesów Stowarzyszenia wobec instytucji państwowych, samorządowych i organizacji społecznych.</p>
+<p>31. Wspomaganie organizacyjne, szkoleniowe, informacyjne lub finansowe organizacji pozarządowych oraz podmiotów, o których mowa w art. 3 ust. 3 Ustawy o działalności pożytku publicznego i wolontariacie.</p>
+<p>32. Promocja wzorców związanych z przestrzeganiem praw człowieka i praw zwierząt.</p>
+<p>33. Popularyzowanie, promowanie i wdrażanie postaw i rozwiązań proekologicznych.</p>
+<p>34. Popularyzowanie i promowanie aktywnych form spędzania czasu wolnego.</p>
+<p>35. Działalności na rzecz podmiotów ekonomii społecznej i przedsiębiorstw społecznych, o których mowa w ustawie z dnia 5 sierpnia 2022 r. o ekonomii społecznej (Dz. U. z 2024 r. poz. 113).</p>
+<p>36. Podejmowanie w ramach obowiązujących przepisów innych przedsięwzięć związanych z realizacją celów Stowarzyszenia.</p>
+<p>Rozdział III. Członkowie Stowarzyszenia</p>
+<p>§ 9</p>
+<p>1. Członkami Stowarzyszenia mogą być osoby fizyczne i prawne. Osoba prawna może być jedynie członkiem wspierającym Stowarzyszenia.</p>
+<p>2. Stowarzyszenie posiada członków: </p>
+<p>a.	zwyczajnych</p>
+<p>b.	wspierających</p>
+<p>c.	chonorowych</p>
+<p>§ 10</p>
+<p>1. Członkiem zwyczajnym Stowarzyszenia może być każda osoba fizyczna, która ukończyła 18 lat, posiada pełną zdolność do czynności prawnych, nie została pozbawiona praw publicznych, nie została skazana prawomocnym wyrokiem za przestępstwo umyślne ścigane z oskarżenia publicznego lub przestępstwo skarbowe, akceptuje cele statutowe Stowarzyszenia, złożyła deklarację członkowską na piśmie i została przyjęta w poczet członków Stowarzyszenia uchwałą Zarządu.</p>
+<p>2. Członków zwyczajnych i wspierających przyjmuje w drodze uchwały Zarząd, na podstawie pisemnej deklaracji. W uzasadnionych przypadkach Zarząd może odmówić przyjęcia danej osoby w poczet członków Stowarzyszenia.</p>
+<p>3. Przyjęcia nowych członków dokonuje Zarząd uchwałą podjętą nie później niż w ciągu dwóch miesięcy od daty złożenia deklaracji.</p>
+<p>4. Nowo przyjęci członkowie wpłacają składki członkowskie w ciągu 30 dni od daty otrzymania zawiadomienia o przyjęciu na członka Stowarzyszenia.</p>
+<p>5. Składki członkowskie powinny być wpłacane do końca pierwszego kwartału każdego roku.</p>
+<p>§ 11</p>
+<p>1. Członkiem wspierającym Stowarzyszenia może zostać osoba fizyczna i prawna, która zadeklaruje na piśmie pomoc finansową, rzeczową lub merytoryczną w realizacji celów Stowarzyszenia.</p>
+<p>2. Członkiem wspierającym zostaje się na podstawie uchwały Zarządu podjętej nie później niż w ciągu dwóch miesięcy od daty złożenia pisemnej deklaracji.</p>
+<p>§ 12</p>
+<p>1. Członkiem honorowym Stowarzyszenia może być osoba fizyczna, która wniosła wybitny wkład w działalność i rozwój Stowarzyszenia.</p>
+<p>2. Członkiem honorowym staje się po przyjęciu uchwały przez Walne Zebranie na wniosek Zarządu albo co najmniej 5 członków Stowarzyszenia.</p>
+<p>3. Członek honorowy ma prawo z głosem doradczym brać udział w Walnym Zebraniu Członków Stowarzyszenia, zgłaszać do władz Stowarzyszenia wnioski i postulaty dotyczące podejmowanych przez Stowarzyszenie zadań.</p>
+<p>Członkowie zwyczajni mają prawo do:</p>
+<p>§ 13</p>
+<p>a. biernego i czynnego uczestniczenia w wyborach do władz Stowarzyszenia,</p>
+<p>b. korzystania z dorobku i wszelkich form działalności Stowarzyszenia,</p>
+<p>c. udziału w zebraniach, wykładach oraz imprezach organizowanych przez Stowarzyszenie,</p>
+<p>d. zgłaszania wniosków co do działalności Stowarzyszenia.</p>
+<p>§ 14</p>
+<p>Członkowie zwyczajni mają obowiązek:</p>
+<p>a. brania udziału w działalności Stowarzyszenia i w realizacji jego celów,</p>
+<p>b. uczestniczenia w walnych zebraniach członków,</p>
+<p>c. przestrzegania statutu i uchwał władz Stowarzyszenia,</p>
+<p>d. regularnego opłacania składek.</p>
+<p>§ 15</p>
+<p>1. Członkowie wspierający i honorowi nie posiadają biernego oraz czynnego prawa wyborczego, mogą jednak brać udział z głosem doradczym w statutowych władzach Stowarzyszenia, poza tym posiadają takie prawa jak członkowie zwyczajni.</p>
+<p>2. Członek wspierający ma obowiązek wywiązywania się z zadeklarowanych świadczeń, przestrzegania statutu oraz uchwał władz Stowarzyszenia.</p>
+<p>3. Członkowie honorowi są zobowiązani do przestrzegania statutu oraz uchwał władz Stowarzyszenia. Są zwolnieni ze składek członkowskich.</p>
+<p>§ 16</p>
+<p>1. Członkostwo w Stowarzyszeniu ustaje na skutek:</p>
+<p>a. dobrowolnej rezygnacji pisemnej z przynależności do Stowarzyszenia złożonej na ręce Zarządu,</p>
+<p>b. śmierci członka lub utraty osobowości prawnej/rozwiązania podmiotu (w przypadku osoby prawnej lub jednostki organizacyjnej nieposiadającej osobowości prawnej, której ustawa przyznaje zdolność prawną);</p>
+<p>c. utraty praw publicznych na mocy prawomocnego wyroku sądu,</p>
+<p>d. skazania prawomocnym wyrokiem za przestępstwo umyślne ścigane z oskarżenia publicznego lub przestępstwo skarbowe,</p>
+<p>e. wykluczenia przez Zarząd:</p>
+<ul>
+<li>z powodu nieusprawiedliwionego zalegania z opłatą składek członkowskich przez pół roku,</li>
+<li>z powodu rażącego naruszenia zasad statutowych, nieprzestrzegania postanowień i uchwał władz Stowarzyszenia,</li>
+</ul>
+<p>2. Od uchwały Zarządu w sprawie pozbawienia członkostwa w Stowarzyszeniu przysługuje odwołanie do Walnego Zebrania Członków w terminie 14 dni od daty doręczenia stosownej uchwały. Odwołanie jest rozpatrywane na najbliższym Walnym Zebraniu Członków. Uchwała Walnego Zebrania jest ostateczna.</p>
+<p>Władzami Stowarzyszenia są:</p>
+<p>a. Walne Zebranie Członków,</p>
+<p>b. Zarząd,</p>
+<p>c. Komisja Rewizyjna.</p>
+<p>Rozdział IV. Władze Stowarzyszenia</p>
+<p>§ 17</p>
+<p>Władzami Stowarzyszenia są: </p>
+<p>Walne zebranie członków</p>
+<p>Zarząd</p>
+<p>Komisja Rewizyjna</p>
+<p>§ 18</p>
+<p>1. Władze Stowarzyszenia wybierane są przez Walne Zebranie Członków w głosowaniu jawnym zwykłą większością głosów. Walne Zebranie może zdecydować o przeprowadzeniu głosowania tajnego.</p>
+<p>2. W razie, gdy skład władz Stowarzyszenia ulegnie zmniejszeniu w czasie trwania kadencji, uzupełnienie ich składu może nastąpić w drodze kooptacji, której dokonują pozostali członkowie organu, który</p>
+<p>uległ zmniejszeniu. W trybie tym można powołać nie więcej niż połowę składu organu.</p>
+<p>§ 19</p>
+<p>Uchwały wszystkich władz Stowarzyszenia zapadają w głosowaniu jawnym zwykłą większością głosów, przy obecności co najmniej połowy członków uprawnionych do głosowania w pierwszym terminie, w drugim terminie bez względu na liczbę obecnych członków, chyba, że dalsze postanowienia statutu stanowią inaczej.</p>
+<p>§ 20</p>
+<p>Kadencja wszystkich wybieralnych władz Stowarzyszenia trwa 5 lat.</p>
+<p>Walne Zebranie Członków</p>
+<p>§ 21</p>
+<p>1. Najwyższą władzą Stowarzyszenia jest Walne Zebranie Członków.</p>
+<p>2. Walne Zebranie może być zwyczajne i nadzwyczajne.</p>
+<p>3. Nadzwyczajne Walne Zebranie Członków Stowarzyszenia zwołuje się w każdym czasie, jeżeli zajdzie taka potrzeba.</p>
+<p>4. Walne Zebranie Członków otwiera Prezes, a w razie jego nieobecności inny Członek Zarządu, następnie zebrani dokonują spośród obecnych członków zwyczajnych, wyboru Przewodniczącego Zebrania, Sekretarza oraz członków Komisji Skrutacyjnej.</p>
+<p>5. Przewodniczący Zebrania i członkowie Komisji Skrutacyjnej wybierani są w głosowaniu jawnym, zwykłą większością głosów obecnych na Zebraniu członków zwyczajnych Stowarzyszenia.</p>
+<p>6. Przewodniczący Zebrania:</p>
+<ol type="1">
+<li>kieruje Obradami Walnego Zebrania Członków,</li>
+<li>podpisuje protokół Zebrania.</li>
+</ol>
+<p>7. Sekretarz sporządza i podpisuje protokół Zebrania.</p>
+<p>8. Komisja skrutacyjna składa się z 3 członków, zbiera oraz liczy głosy i podaje wynik głosowania nad uchwałami.</p>
+<p>9. Zwyczajne Walne Zebrania zwołuje Zarząd raz w roku, jako sprawozdawcze, i co 5 lat, jako sprawozdawczo-wyborcze, zawiadamiając członków o jego terminie, miejscu i proponowanym porządku obrad co najmniej na 14 dni przed terminem Walnego Zebrania. Jeśli na zebraniu nie ma wymaganego kworum, zwołuje się zebranie w drugim terminie nie później niż w ciągu miesiąca od dnia zwołania Walnego Zebrania Członków.</p>
+<p>§ 22</p>
+<p>1. O miejscu, terminie i porządku obrad Walnego Zebrania Członków, Zarząd powiadamia członków, co najmniej na 7 dni przed terminem zebrania, za pośrednictwem poczty elektronicznej, za uprzednią zgodą członka wyrażoną poprzez podanie adresu e-mail właściwego do przesyłania zawiadomień lub listem poleconym. Walne Zebranie może odbyć się bez formalnego zwołania, jeżeli wszyscy</p>
+<p>członkowie Stowarzyszenia w obecni i wyrazili zgodę na odbycie Walnego Zebrania oraz na proponowany porządek obrad.</p>
+<p>2. Rozszerzenie porządku posiedzenia Zebrania jest możliwe do dnia formalnego ogłoszenia porządku Zebrania lub w trakcie obrad Zebrania za zgodą wyrażoną zwykłą większością głosów.</p>
+<p>3. Uchwały Walnego Zebrania Członków zapadają w głosowaniu jawnym, zwykłą większością głosów, przy obecności co najmniej połowy ogólnej liczby członków zwyczajnych Stowarzyszenia, a w drugim terminie bez względu na liczbę obecnych. Drugi termin Walnego Zebrania może być wyznaczony, w razie braku kworum w pierwszym terminie, w tym samym dniu lub przed upływem dwóch tygodni od daty pierwszego terminu Walnego Zebrania, pod warunkiem wskazania w zawiadomieniach zwołujących Walne Zebranie skierowanych do członków Stowarzyszenia, daty, godziny i miejsca odbycia drugiego Walnego Zebrania w razie braku kworum w pierwszym terminie. W sprawach osobowych uchwały zapadają w głosowaniu tajnym. Tajność głosowania za zgodą większości obecnych na zgromadzeniu członków zwyczajnych może być uchylona.</p>
+<p>Do kompetencji Walnego Zebrania należy:</p>
+<p>§ 23</p>
+<ol type="a">
+<li>określenie głównych kierunków działania i rozwoju Stowarzyszenia,</li>
+<li>uchwalanie statutu i jego zmian,</li>
+<li>wybór i odwołanie członków Zarządu i Komisji Rewizyjnej Stowarzyszenia,</li>
+<li>udzielanie Zarządowi absolutorium na wniosek Komisji Rewizyjnej,</li>
+<li>rozpatrywanie i zatwierdzanie sprawozdania finansowego i merytorycznego oraz sprawozdań władz Stowarzyszenia,</li>
+<li>rozpatrywanie odwołań od uchwał Zarządu w sprawach członkowskich,</li>
+<li>rozpatrywanie skarg, wniosków i postulatów zgłaszanych przez członków lub władze Stowarzyszenia pod obrady Walnego Zebrania,</li>
+<li>podejmowanie uchwały o rozwiązaniu Stowarzyszenia i przeznaczeniu jego majątku,</li>
+<li>podejmowanie uchwał w sprawie nadania członkostwa honorowego,</li>
+<li>podejmowanie uchwał w innych sprawach będących przedmiotem obrad,</li>
+<li>inne zadania wynikające z niniejszego statutu.</li>
+</ol>
+<p>§ 24</p>
+<p>1. Nadzwyczajne Walne Zebranie Członków zwołuje Zarząd:</p>
+<p>1) z własnej inicjatywy,</p>
+<p>2) na żądanie Komisji Rewizyjnej,</p>
+<p>3) na pisemny wniosek co najmniej 1/3 ogólnej liczby członków zwyczajnych.</p>
+<p>2. Zarząd jest zobowiązany zwołać Nadzwyczajne Walne Zebranie Członków w ciągu 15 dni, od dnia otrzymania żądania lub wniosku, określonych w ust. 1 pkt 2) i 3).</p>
+<p>3. Nadzwyczajne Walne Zebranie Członków obraduje wyłącznie nad sprawami, dla których zostało zwołane.</p>
+<p>4. W przypadku nie zwołania przez Zarząd Nadzwyczajnego Walnego Zebrania Członków w terminie określonym w ust. 2 Nadzwyczajne Walne Zebranie Członków zwołuje Komisja Rewizyjna.</p>
+<p>Zarząd</p>
+<p>§ 25</p>
+<p>1. Zarząd jest powołany do kierowania całą działalnością Stowarzyszenia zgodnie z uchwałami Walnego Zebrania Członków, a także reprezentuje Stowarzyszenie na zewnątrz.</p>
+<p>2. Zarząd składa się z 1 do 3 osób, w tym Prezesa oraz, w zależności od liczby członków Zarządu, odpowiednio Sekretarza i Skarbnika, wybieranych przez Walne Zebranie Członków Stowarzyszenia w głosowaniu jawnym zwykłą większością głosów przy obecności co najmniej połowy ogólnej liczby członków zwyczajnych Stowarzyszenia, a w drugim terminie bez względu na liczbę obecnych. Drugi termin Walnego Zebrania może być wyznaczony, w razie braku kworum w pierwszym terminie, w tym samym dniu lub przed upływem dwóch tygodni od daty pierwszego terminu Walnego Zebrania, pod warunkiem wskazania w zawiadomieniach zwołujących Walne Zebranie skierowanych do członków Stowarzyszenia, daty, godziny i miejsca odbycia drugiego Walnego Zebrania w razie braku kworum w pierwszym terminie. Skład liczbowy Zarządu ustala uchwałą Walne Zebranie Członków Stowarzyszenia. Pierwszy skład Zarządu wybierany jest na zebraniu założycielskim w głosowaniu jawnym zwykłą większością głosów.</p>
+<p>6. Zebrania Zarządu Stowarzyszenia odbywają się w miarę potrzeby.</p>
+<p>7. Jeżeli Zarząd składa się z 1 osoby, do reprezentacji Stowarzyszenia, w szczególności składania oświadczeń woli w imieniu Stowarzyszenia oraz zaciągania zobowiązań majątkowych, uprawniony jest Prezes samodzielnie.</p>
+<p>8. Jeżeli Zarząd składa się z więcej niż 1 osoby, do reprezentacji Stowarzyszenia, w szczególności składania oświadczeń woli w imieniu Stowarzyszenia oraz zaciągania zobowiązań majątkowych, uprawnieni są:</p>
+<ul>
+<li>w przypadku Zarządu dwuosobowego - Prezes samodzielnie albo drugi członek Zarządu działający łącznie z Prezesem,</li>
+<li>w przypadku Zarządu trzyosobowego - Prezes samodzielnie albo pozostali członkowie Zarządu działający łącznie z Prezesem lub innym członkiem Zarządu.</li>
+</ul>
+<p>9. W umowach między Stowarzyszeniem a członkiem Zarządu Stowarzyszenia oraz w sporach z nim Stowarzyszenia reprezentuje członek Komisji Rewizyjnej wskazany w uchwale tego organu lub</p>
+<p>pełnomocnik powołany uchwałą Walnego Zebrania członków Stowarzyszenia.</p>
+<p>10. Członkowie Zarządu mogą otrzymywać wynagrodzenie za czynności wykonywane w związku z pełnioną funkcją.</p>
+<p>Do kompetencji Zarządu należy:</p>
+<ul>
+<li>a. kierowanie bieżącą pracą Stowarzyszenia,</li>
+<li>a. realizowanie uchwał Walnego Zebrania,</li>
+<li>c. zarządzanie majątkiem Stowarzyszenia,</li>
+<li>d. planowanie i prowadzenie gospodarki finansowej,</li>
+<li>e. reprezentowanie Stowarzyszenia na zewnątrz i działanie w jego imieniu,</li>
+<li>f. przyjmowanie i wykluczanie członków Stowarzyszenia,</li>
+<li>g. zwoływanie Walnego Zebrania,</li>
+<li>h. ustalanie wysokości składek członkowskich.</li>
+<li>i. składanie sprawozdań z działalności Stowarzyszenia na Walnym Zebraniach Członków,</li>
+<li>j. podejmowanie decyzji w sprawach niezastrzeżonych dla innych władz Stowarzyszenia.</li>
+<li>k. podejmowanie uchwał w innych sprawach zastrzeżonych w statucie do kompetencji Zarządu Stowarzyszenia.</li>
+</ul>
+<p>Komisja Rewizyjna</p>
+<p>§ 27</p>
+<p>1. Komisja Rewizyjna jest organem Stowarzyszenia powołanym do sprawowania kontroli nad jego działalnością.</p>
+<p>2. Kadencja członków Komisji Rewizyjnej jest wspólna i trwa 5 lat.</p>
+<p>3. Komisja Rewizyjna składa się z 3 do 5 członków, w tym przewodniczącego i członków Komisji, wybieranych przez Walne Zebranie Członków Stowarzyszenia w głosowaniu jawnym bezwzględną większością głosów przy obecności co najmniej połowy ogólnej liczby członków zwyczajnych Stowarzyszenia, a w drugim terminie bez względu na liczbę obecnych. Drugi termin Walnego Zebrania może być wyznaczony, w razie braku kworum w pierwszym terminie, w tym samym dniu lub przed upływem dwóch tygodni od daty pierwszego terminu Walnego Zebrania, pod warunkiem wskazania w zawiadomieniach zwołujących Walne Zebranie skierowanych do członków Stowarzyszenia, daty, godziny i miejsca odbycia drugiego Walnego Zebrania w razie braku kworum w pierwszym terminie. Skład liczbowy Komisji Rewizyjnej ustala uchwałą Walne Zebranie Członków Stowarzyszenia. Pierwszy skład Komisji Rewizyjnej wybierany jest na zebraniu założycielskim w głosowaniu jawnym bezwzględną większością głosów.</p>
+<p>4. Uchwały Komisji Rewizyjnej podejmowane są w głosowaniu jawnym, zwykłą większością głosów, przy obecności co najmniej 2/3 ogólnej liczby członków Komisji Rewizyjnej (kworum). W razie równej liczby głosów decyduje głos Przewodniczącego. Na podstawie uchwały pełnego składu Komisja Rewizyjna może podejmować uchwały w głosowaniu tajnym.</p>
+<p>§ 28</p>
+<p>1. Komisja Rewizyjna w zakresie wykonywanej kontroli wewnętrznej nie podlega Zarządowi.</p>
+<p>2. Członkowie Komisji Rewizyjnej:</p>
+<ol>
+<li>nie mogą być członkami organu zarządzającego ani pozostawać z nimi w związku małżeńskim, we wspólnym pożyciu, w stosunku pokrewieństwa, powinowactwa lub podległości służbowej,</li>
+<li>nie byli skazani prawomocnym wyrokiem za przestępstwo umyślne ścigane z oskarżenia publicznego lub przestępstwo skarbowe,</li>
+<li>mogą otrzymywać zwrot uzasadnionych kosztów związanych z pełnioną funkcją w Komisji Rewizyjnej, w wysokości nie wyższej niż przeciętne miesięczne wynagrodzenie w sektorze przedsiębiorstw ogłoszone przez Prezesa Głównego Urzędu Statystycznego za rok poprzedni.</li>
+</ol>
+<p>§ 29</p>
+<p>Do kompetencji Komisji Rewizyjnej należy:</p>
+<ul>
+<li>a. kontrola całokształtu działalności Stowarzyszenia,</li>
+<li>b. ocena pracy Zarządu, w tym corocznych sprawozdań i bilansu,</li>
+<li>c. występowanie do Zarządu z wnioskami wynikającymi z przeprowadzonych kontroli,</li>
+<li>d. składanie sprawozdań na Walnym Zebraniu Członków wraz z oceną działalności Stowarzyszenia i Zarządu Stowarzyszenia,</li>
+<li>e. wnioskowanie do Walnego Zebrania Członków o udzielanie absolutorium Zarządowi,</li>
+<li>f. wnioskowanie o odwołanie całego Zarządu w razie jego bezczynności lub bezczynnego członka Zarządu,</li>
+<li>g. wnioskowanie o zwołanie Nadzwyczajnego Walnego Zebrania Członków,</li>
+<li>h. zwoływanie Walnego Zebrania Członków w razie nie zwołania walnego zebrania członków przez zarząd w określonym terminie,</li>
+<li>i. składanie sprawozdań ze swej działalności na Walnym Zebraniu Członków Stowarzyszenia,</li>
+</ul>
+<p>§ 30</p>
+<p>1. Członkowie Komisji Rewizyjnej nie mogą pełnić innych funkcji we władzach Stowarzyszenia.</p>
+<p>2. Komisja Rewizyjna ma prawo żądania od członków i władz Stowarzyszenia złożenia pisemnych lub ustnych wyjaśnień dotyczących kontrolowanych spraw.</p>
+<p><strong>Rozdział V. Majątek i gospodarka finansowa</strong></p>
+<p>1. Źródłami majątku Stowarzyszenia są:<br/>
+a. składki członkowskie,<br/>
+b. darowizny, zapisy i spadki, środki pochodzące z ofiarności publicznej,<br/>
+c. dotacje, subwencje, udziały, lokaty,<br/>
+d. dochody z majątku Stowarzyszenia, dochody z własnej działalności.</p>
+<p>2. Stowarzyszenie prowadzi gospodarkę finansową zgodnie z obowiązującymi przepisami.</p>
+<p>3. Decyzje w sprawie nabywania, zbywania i obciążania majątku Stowarzyszenia podejmuje Zarząd.</p>
+<p>4. Stowarzyszenie nie może:<br/>
+a) udzielać pożyczek osobom prawnym organizacyjnie z nim powiązanym, członkom organów Stowarzyszenia, osobom zatrudnionym w Stowarzyszeniu ani osobom, z którymi osoby zatrudnione w Stowarzyszeniu pozostają w związku małżeńskim, we wspólnym pożyciu albo w stosunku pokrewieństwa lub powinowactwa w linii prostej, pokrewieństwa lub powinowactwa w linii bocznej do drugiego stopnia albo są związane z tytułu przysposobienia, opieki lub kurateli, ani zabezpieczać ich zobowiązań mieniem Stowarzyszenia;<br/>
+b) przekazywać majątku na rzecz osób, o których mowa w pkt a, na zasadach innych niż w przypadku osób trzecich, w szczególności jeżeli przekazanie to następuje nieodpłatnie lub na preferencyjnych warunkach;<br/>
+c) wykorzystywać majątku na rzecz osób, o których mowa w pkt a, na zasadach innych niż w przypadku osób trzecich;<br/>
+d) dokonywać zakupu towarów lub usług od osób prawnych organizacyjnie z nim powiązanych lub podmiotów, w których uczestniczą osoby, o których mowa w pkt a, na zasadach innych niż w przypadku osób trzecich lub po cenach wyższych niż rynkowe.</p>
+<p>5. Stowarzyszenie prowadzi gospodarkę finansową oraz rachunkowość zgodnie z obowiązującymi przepisami.</p>
+<p>6. Stowarzyszenie może prowadzić działalność odpłatną pożytku publicznego. O rozpoczęciu prowadzenia działalności odpłatnej przez Stowarzyszenie oraz o zakończeniu jej prowadzenia decyduje Zarząd w formie uchwały, określającej także przedmiot prowadzonej działalności odpłatnej. Zmiana przedmiotu działalności odpłatnej prowadzonej przez Stowarzyszenie wymaga uchwały Zarządu.</p>
+<p>7. Cały dochód z działalności odpłatnej Stowarzyszenia służy wyłącznie realizacji celów statutowych.</p>
+<p><strong>Rozdział VI. Postanowienia końcowe</strong></p>
+<p>§ 32<br/>
+Uchwałę w sprawie zmiany statutu Stowarzyszenia podejmuje Walne Zebranie Członków zwykłą większością głosów.</p>
+<p>większością głosów, przy obecności przynajmniej połowy członków uprawnionych do głosowania.</p>
+<p>1. Uchwałę o rozwiązaniu Stowarzyszenia podejmuje Walne Zebranie Członków zwykłą większością głosów przy obecności co najmniej połowy członków uprawnionych do głosowania.</p>
+<p>2. Podejmując uchwałę o rozwiązaniu Stowarzyszenia, Walne Zebranie Członków wybiera likwidatora oraz określa przeznaczenie majątku Stowarzyszenia.</p>
+<p>3. W sprawach nieuregulowanych w niniejszym statucie zastosowanie znajdują przepisy ustawy Prawo o stowarzyszeniach.</p>
+<!-- itd. - resztę wklej jak chcesz -->
+</div>
+</section>
+<script>
+    // Skrypt do przełączania zakładek
+    const tabs = document.querySelectorAll('.tab-link');
+    const tabContents = document.querySelectorAll('.tab-content');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Ukrywamy wszystkie sekcje
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Zmieniamy klasę aktywną na klikniętej zakładce
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Pokazujemy odpowiednią sekcję
+        const targetTab = this.getAttribute('data-tab');
+        document.getElementById(targetTab).classList.add('active');
+        
+        // Sprawdzamy, czy kliknięta zakładka to dropdown, jeśli tak to rozwijamy
+        dropdowns.forEach(dropdown => {
+          if (dropdown.querySelector('a').getAttribute('data-tab') === targetTab) {
+            dropdown.classList.add('active');
+          } else {
+            dropdown.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
